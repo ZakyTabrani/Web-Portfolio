@@ -4,55 +4,306 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jack's Portfolio</title>
+    <link rel="icon" href="portfolio.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #F4C2C2; /* baby pink background */
+            color: #000000; /* black text */
+            line-height: 1.6;
+        }
+        
+        header {
+            background: #000000; /* black header */
+            color: #F4C2C2; /* baby pink text */
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            font-size: 2.5em;
+        }
+        
+        nav {
+            margin: 20px 0;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #F4C2C2; /* baby pink text */
+            margin: 0 15px;
+            padding: 10px 20px;
+            background: #000000; /* black background */
+            border-radius: 5px;
+        }
+        
+        nav a:hover {
+            background-color: #F4C2C2; /* baby pink hover */
+            color: #000000; /* black hover text */
+            transition: 0.3s ease;
+        }
+        
+        section {
+            padding: 20px;
+            margin: 10px 0;
+        }
+        
+        section h2 {
+            font-size: 2em;
+            text-align: center;
+            color: #000000; /* black headings */
+            margin-bottom: 20px;
+        }
+        
+        .content-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        
+        p::first-letter {
+            font-size: 150%;
+            color: #000000; /* black first letter */
+        }
+        
+        .profile-image {
+            width: 250px; 
+            height: 250px;
+            position: relative;
+            clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
+            background: url('IMG_0935.jpg') center/cover no-repeat;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+            background-color: #F4C2C2; /* baby pink image background */
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        table, th, td {
+            border: 1px solid #000000; /* black border */
+            padding: 10px;
+        }
+        
+        th {
+            background-color: #000000; /* black header */
+            color: #F4C2C2; /* baby pink text */
+        }
+        
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="text"], input[type="email"], input[type="number"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        
+        input[type="submit"], input[type="reset"] {
+            background-color: #000000; /* black button */
+            color: #F4C2C2; /* baby pink text */
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #F4C2C2; /* baby pink hover */
+            color: #000000; /* black hover text */
+        }
+        
+        footer {
+            background-color: #000000; /* black footer */
+            color: #F4C2C2; /* baby pink text */
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        
+        aside {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        aside h2, aside h3 {
+            color: #000000; /* black headings */
+            text-align: center;
+        }
+        
+        audio {
+            display: block;
+            margin: 10px auto;
+        }
+        
+        iframe {
+            display: block;
+            margin: 10px auto;
+        }
+        
+        hr {
+            margin: 20px 0;
+            border: 1px solid #000000; /* black hr */
+        }
+    </style>
 </head>
 <body>
-    <h1><center>Welcome to Jack's Site</center></h1>
-    <hr>
-    <img src="IMG_0935.JPG" alt="Foto diri" width="350" style="display: block; margin-left: auto; margin-right: auto;">
-    <p><center><q><em>do what you like. like what you do.</em></q></center></p>
-    <hr>
-    <h2><center>Personal Data</center></h2>
-    <p><b>Name:</b> Muhammad Zaky Tabrani</p>
-    <p><b>Date of Birth:</b> 10 April 2004</p>
-    <p><b>Address:</b> Bambu Kuning Street</p>
-    <p><b>Email:</b> <u>zakitabrani1004@gmail.com</u></p>
-    <p><b>Role:</b> <i>Junior Data Analyst</i></p>
-    <hr>
-    <h2><center>Education History</center></h2>
-    <table border="1">
-        <tr>
-            <th>Institution</th>
-            <th>Degree</th>
-            <th>Year</th>
-        </tr>
-        <tr>
-            <td>Pertamina University</td>
-            <td>S.Kom.</td>
-            <td>2026</td>
-        </tr>
-        <tr>
-            <td>Senior High School 60 Jakarta</td>
-            <td>Natural Science (IPA)</td>
-            <td>2022</td>
-        </tr>
-        <tr>
-            <td colspan="2">Junior High School 107 Jakarta</td>
-            <td>2019</td>
-        </tr>
-    </table>
-    <hr>
-    <h2><center>Skills</center></h2>
-    <ul>
-        <li>C++</li>
-        <li>Java</li>
-        <li>HTML</li>
-        <li>Communication</li>
-        <li>Teamwork</li>
-        <li><mark>Easily Adaptable</mark></li>
-    </ul>  
-    <hr>
-    <h2><center>Contact</center></h2>  
-    <p><b>Instagram:</b> <a href="https://www.instagram.com/zaktabrann">@zaktabrann</a></p>
-    
+    <header>
+        <h1>Welcome to Jack's Site</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="content-box">
+            <div class="profile-image"></div>
+            <p><center><q><em>do what you like. like what you do.</em></q></center></p><br>
+            <article>
+                <p>I am a student who is enthusiastic about programming as a computer science student at <span style="color: pink;">Pertamina University</span> who is interested in data science and software engineering.
+                    I also mastered c++, java, and HTML programming languages.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="content-box">
+            <h2>About Me</h2>
+            <p><b>Name:</b> Muhammad Zaky Tabrani</p>
+            <p><b>Date of Birth:</b> 10 April 2004</p>
+            <p><b>Address:</b> Bambu Kuning Street</p>
+            <p><b>Email:</b> <u>zakitabrani1004@gmail.com</u></p>
+            <p><b>Role:</b> Junior Data Analyst</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="content-box">
+            <h2>Education History</h2>
+            <table>
+                <tr>
+                    <th>Institution</th>
+                    <th>Degree</th>
+                    <th>Year</th>
+                </tr>
+                <tr>
+                    <td>Pertamina University</td>
+                    <td>Bachelor of Computer Science</td>
+                    <td>2026</td>
+                </tr>
+                <tr>
+                    <td>Senior High School 60 Jakarta</td>
+                    <td>Natural Science (IPA)</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Junior High School 107 Jakarta</td>
+                    <td>2019</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="content-box">
+            <h2>Skills</h2>
+            <ul>
+                <li>C++</li>
+                <li>Java</li>
+                <li>HTML</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+                <li><mark>Quick Learner</mark></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="content-box">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="fullname">Fullname<span style="color: red;">*</span></label>
+                <input type="text" id="fullname" name="fullname" placeholder="Your Name" required>
+
+                <label for="email">Email<span style="color: red;">*</span></label>
+                <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
+
+                <label for="phoneNumber">Phone Number<span style="color: red;">*</span></label>
+                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Your Phone Number" required>
+
+                <label>Gender<span style="color: red;">*</span></label><br>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="Female">Female</label><br>
+
+                <label for="status">Status<span style="color: red;">*</span></label>
+                <select id="status" name="status" required>
+                    <option value="">Select</option>
+                    <option value="student">Student</option>
+                    <option value="vice President">Vice President</option>
+                    <option value="project Manager">Project Manager</option>
+                    <option value="technician">Technician</option>
+                    <option value="data Analyst">Data Analyst</option>
+                </select>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+
+                <label for="purposes">Purposes</label><br>
+                <input type="checkbox" id="getToKnow" name="purposes" value="getToKnow">
+                <label for="getToKnow">Get to know</label><br>
+                <input type="checkbox" id="business" name="purposes" value="business">
+                <label for="business">Business</label><br>
+                <input type="checkbox" id="collaboration" name="purposes" value="collaboration">
+                <label for="collaboration">Collaboration</label><br>
+
+                <input type="submit" value="Send">
+                <input type="reset" value="Reset">
+            </form>
+        </div>
+    </section>
+
+    <aside>
+        <h2><center>My Favorites</center></h2>
+        <h3>My Current Favorite Song:</h3>
+        <p><center>ROSE & Bruno Mars - APT.</center></p>
+            <audio controls>
+                <source src="ROSE & Bruno Mars - APT. (Official Music Video).mp3" type="audio/mpeg">
+                Browser anda tidak mendukung audio.
+            </audio>
+        <h3>One of the most memorable matches of the world's biggest club Manchester United:</h3>
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/EHJ-n_a-fNk" frameborder="0" allowfullscreen></iframe>
+        <hr>
+    </aside>
+
+    <footer>
+        Copyright &copy; 2024. Muhammad Zaky Tabrani
+    </footer>
 </body>
 </html>
