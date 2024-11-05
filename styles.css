@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 
 * {
     margin: 0;
@@ -87,21 +90,63 @@ section h2 {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-p::first-letter {
-    font-size: 150%;
-    color: black;
-}
-
+/*profile*/
 .profile-image {
-    width: 250px; 
+    width: 250px;
     height: 250px;
     position: relative;
     clip-path: polygon(50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%);
     background: url('IMG_0935.JPG') center/cover no-repeat;
-    margin: 0 auto;
+    background-color: #F4C2C2;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-    background-color: #F4C2C2; 
 }
+
+.hero-content {
+    display: flex;              
+    align-items: center;        
+    justify-content: space-between;  
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.greeting {                   
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .name {                      
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 0.5rem;
+  }
+  
+  .role {                      
+    font-size: 1.5rem;
+    color:rgb(253, 151, 168);           
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+
+  .description {
+    color: black;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 /*skills flexbox*/
 .skills-list {
@@ -145,7 +190,7 @@ form {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.178);
 }
 
 input[type="text"], input[type="email"], input[type="number"], select, textarea {
@@ -192,4 +237,47 @@ audio {
 iframe {
     display: block;
     margin: 10px auto;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+    display: block;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: black;
+    color: pink;
+}
+
+.dark-mode header {
+    background: pink;
+    color: black;
+}
+
+.dark-mode nav a, .dark-mode #darkModeToggle {
+    color: black;
+    background: pink;
+}
+
+.dark-mode nav a:hover, .dark-mode #darkModeToggle:hover {
+    background: black;
+    color: pink;
+}
+
+.dark-mode .content-box {
+    background-color: rgb(250, 211, 211);
+    color: black;
+    box-shadow: 0 4px 15px rgba(247, 176, 176, 0.295);
+}
+
+.dark-mode form{
+    background-color: pink;
+}
+
+.dark-mode footer {
+    background-color: pink;
+    color: black;
 }

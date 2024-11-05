@@ -17,18 +17,27 @@
                 <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
+                <a id="darkModeToggle">Switch Color</a>
             </nav>
         </div>
     </header>
 
     <section id="home">
         <div class="content-box">
-            <div class="profile-image"></div>
-            <p><center><q><em>do what you like. like what you do.</em></q></center></p><br>
-            <article>
-                <p>I am a student who is enthusiastic about programming as a computer science student at <span style="color: pink;">Pertamina University</span> who is interested in data science and software engineering.
-                    I also mastered c++, java, and HTML programming languages.</p>
-            </article>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="greeting">Hello, I'm</p>
+                    <h1 class="name">Muhammad Zaky Tabrani</h1>
+                    <p class="role">Junior Data Analyst</p>
+                    <p class="description">I am a student who is enthusiastic about programming as a computer science student at <span style="color:rgb(253, 151, 168);"><b>Pertamina University</b></span> who is interested in data science and software engineering.</p>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="profile-image"></div> <br>
+                        <p><center><q><em>do what you like. like what you do.</em></q></center></p><br>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -87,42 +96,49 @@
     <section id="contact">
         <div class="content-box">
             <h2>Contact Me</h2>
-            <form>
+            <form id="contactForm">
                 <label for="fullname">Fullname<span style="color: red;">*</span></label>
-                <input type="text" id="fullname" name="fullname" placeholder="Your Name" required>
-
+                <input type="text" id="fullname" name="fullname" placeholder="Your Name">
+                <span class="error" id="nameError"></span>
+            
                 <label for="email">Email<span style="color: red;">*</span></label>
-                <input type="email" id="email" name="email" placeholder="youremail@example.com" required>
-
+                <input type="email" id="email" name="email" placeholder="youremail@example.com">
+                <span class="error" id="emailError"></span>
+            
                 <label for="phoneNumber">Phone Number<span style="color: red;">*</span></label>
-                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Your Phone Number" required>
+                <input type="number" id="phoneNumber" name="phoneNumber" placeholder="Your Phone Number">
+                <span class="error" id="phoneError"></span>
 
                 <label>Gender<span style="color: red;">*</span></label><br>
                 <input type="radio" id="male" name="gender" value="Male">
                 <label for="male">Male</label><br>
                 <input type="radio" id="female" name="gender" value="Female">
-                <label for="Female">Female</label><br>
+                <label for="female">Female</label><br>
+                <span class="error" id="genderError"></span>
 
                 <label for="status">Status<span style="color: red;">*</span></label>
-                <select id="status" name="status" required>
-                    <option value="">Select</option>
-                    <option value="student">Student</option>
-                    <option value="vice President">Vice President</option>
-                    <option value="project Manager">Project Manager</option>
-                    <option value="technician">Technician</option>
-                    <option value="data Analyst">Data Analyst</option>
-                </select>
+                    <select id="status" name="status">
+                        <option value="">Select</option>
+                        <option value="student">Student</option>
+                        <option value="vice President">Vice President</option>
+                        <option value="project Manager">Project Manager</option>
+                        <option value="technician">Technician</option>
+                        <option value="data Analyst">Data Analyst</option>
+                    </select>
+                <span class="error" id="statusError"></span>
 
-                <label for="message">Message</label>
+                <label for="message">Message<span style="color: red;">*</span></label>
                 <textarea id="message" name="message" rows="4" placeholder="Write your message here..."></textarea>
+                <span class="error" id="messageError"></span>
 
-                <label for="purposes">Purposes</label><br>
+                <label for="purposes">Purposes<span style="color: red;">*</span></label><br>
                 <input type="checkbox" id="getToKnow" name="purposes" value="getToKnow">
                 <label for="getToKnow">Get to know</label><br>
                 <input type="checkbox" id="business" name="purposes" value="business">
                 <label for="business">Business</label><br>
                 <input type="checkbox" id="collaboration" name="purposes" value="collaboration">
                 <label for="collaboration">Collaboration</label><br>
+                <span class="error" id="purposesError"></span>
 
                 <input type="submit" value="Send">
                 <input type="reset" value="Reset">
@@ -141,12 +157,13 @@
                 </audio>
             <h3>One of the most memorable matches of the world's biggest club Manchester United:</h3>
                 <iframe width="560" height="315" 
-                src="https://www.youtube.com/embed/EHJ-n_a-fNk" frameborder="0" allowfullscreen></iframe>
+                src="https://www.youtube.com/embed/0Z0y3S8xWQM?si=LjKbJe2H_dv92KKE" frameborder="0" allowfullscreen></iframe>
         </div>
     </aside>
-
+    
     <footer>
         Copyright &copy; 2024. Muhammad Zaky Tabrani
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
