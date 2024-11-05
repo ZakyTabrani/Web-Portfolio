@@ -146,8 +146,6 @@ section h2 {
     align-items: center;
 }
 
-
-
 /*skills flexbox*/
 .skills-list {
     display: flex;
@@ -246,7 +244,7 @@ iframe {
     display: block;
 }
 
-/* Dark Mode Styles */
+/* Switch Mode */
 .dark-mode {
     background-color: black;
     color: pink;
